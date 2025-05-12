@@ -1,1 +1,1 @@
-# welcomebot
+https://discord.gg/wicks
