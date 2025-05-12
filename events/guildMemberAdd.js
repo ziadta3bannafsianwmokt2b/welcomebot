@@ -3,7 +3,7 @@ const { Events, EmbedBuilder } = require('discord.js');
 module.exports = {
   name: Events.GuildMemberAdd,
   async execute(member) {
-    const welcomeChannelId = '1345386967784751195'; 
+    const { welcomeChannelId } = require ('./config.json')
     const channel = member.guild.channels.cache.get(welcomeChannelId);
 
     if (!channel) return;
